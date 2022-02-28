@@ -1,14 +1,11 @@
 package easy.s0001
 
-import java.lang.IllegalArgumentException
-
-
 class TwoSum {
     companion object {
 
         fun twoSum(nums: IntArray, target: Int): IntArray {
             for ((index, value) in nums.withIndex()) {
-                for ((secIndex, secValue) in nums .withIndex()) {
+                for ((secIndex, secValue) in nums.withIndex()) {
                     if (value + secValue == target && index != secIndex) {
                         return intArrayOf(index, secIndex)
                     }
